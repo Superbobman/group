@@ -1,0 +1,31 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css');
+
+.view {
+background: url("food.jpg")no-repeat center center;
+background-size: cover;
+}
+
+
+.top-nav-collapse {
+background-color: #ffb5f6;
+}
+
+.navbar {
+background-color: #ffb5f6;
+}
+
+#searchform {
+  width: 100%;
+}
+
+#socialmedia {
+  background-color: #ffb5f6;
+}
+
+.footer {
+  background-color: #85eac9;
+}
+
+.fa {
+  color: white;
+}
