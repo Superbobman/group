@@ -191,3 +191,11 @@ span {
   width: 1200px;
   margin-left: 100px;
 }
+
+.jumbotron {
+    background-image: url("https://orig00.deviantart.net/2a6c/f/2012/224/0/e/pink_and_blue_background_by_hay123lin-d5assw5.png");
+    background-repeat: no-repeat;
+   background-position: center;
+   -webkit-background-size: cover;
+   background-size: cover;
+}
