@@ -42,7 +42,8 @@ $(window).on('scroll',function() {
 
   $(function () {
       $(document).ready(function(){
-      $(document).on('click', '#button', function(e) {
+      $(document).on('click', '#button1', function(e) {
+        $("#random").removeClass("hidden");
         e.preventDefault();
         let rld = Math.floor(Math.random()*89999+10000);
         $.ajax({
@@ -59,7 +60,6 @@ $(window).on('scroll',function() {
 });
 });
 
-
   function calsPerDay() {
     function find(id) { return document.getElementById(id) }
 
@@ -74,8 +74,3 @@ $(window).on('scroll',function() {
     find("totalCals").innerHTML = Math.round( result )
   }
   calsPerDay()
-
-
-  $("#submit").click(function () {
-      alert("Your data has been submitted!")
-   });

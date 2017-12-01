@@ -18,6 +18,18 @@ background-color: #ffb5f6;
   width: 100%;
 }
 
+#button1 {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+#randomcard {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
 #socialmedia {
   background-color: #ffb3ff;
 }
