@@ -1,0 +1,100 @@
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#title {
+  padding-top: 50px;
+  font-family: 'Julius Sans One';
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+body {
+    background-image: url("background_1.jpg");
+    background-size: 100%;
+}
+
+
+#text {
+    font: 12px;
+}
+
+.h4 {
+  font-family: 'Julius Sans One';
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#contact{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#contact .well{
+    background-color: (255, 204, 204, 0.2);
+    margin-top:20px;
+    border-radius:0;
+    border-style: dotted;
+    font-family:'Julius Sans One';
+    line-height: 1.5em;
+    font-size: 12px;
+    color: black;
+
+}
+
+#contact .form-control{
+    border-radius: 100;
+    border: dotted 0.5px;
+    margin-bottom: 10px;
+
+}
+.call {
+  margin-top: 20px;
+}
+.footer1 {
+  background-color: none;
+}
+
+#contact button{
+    border-radius:0;
+    border:1px solid #1e1e1e;
+    text-align: center;
+}
+
+#contact .row{
+    margin-bottom:30px;
+}
+
+@media (max-width: 768px) {
+    #contact iframe {
+        margin-bottom: 15px;
+        border: dotted;
+}
+
+.logo {
+  margin-top: 25px;
+  transition: all 0.3s ease 0s;
+  font-family: 'Julius Sans One';font-size: 25px;
+  color: white
+}
+.logo img {
+  width: 50px;
+  height: auto;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.sticky .logo {
+margin-top: 16px;
+font-size: 25px;
+color :black;
+opacity: 0.8;
+}
+
+.sticky.logo a {
+  color: #444444;
+  display:inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform:uppercase;
+}
