@@ -2,7 +2,7 @@
 body {
     background-image: url("background.jpg");
     font: normal 16px sans-serif;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .text {

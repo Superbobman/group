@@ -54,3 +54,8 @@ $(window).on('scroll',function() {
     find("totalCals").innerHTML = Math.round( result )
   }
   calsPerDay()
+
+
+  $("#submit").click(function () {
+      alert("Your data has been submitted!")
+   });
