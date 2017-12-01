@@ -22,8 +22,18 @@ $(window).on('scroll',function() {
         method: 'GET',
       }).done(function(res) {
         let output = JSON.parse(res);
-        for (let i = 0; i < 30; i++) {
-          console.log(output.recipes[i].title);
+        for (let i = 0; i < Math.floor(Math.random() * 4 + 1); i++) {
+          $(document).ready(function(){
+          $("#card1img").attr("src", output.recipes[i].image_url);
+          $("#card1name").text(output.recipes[i].title);
+          $("#card2img").attr("src", output.recipes[i+1].image_url);
+          $("#card2name").text(output.recipes[i+1].title);
+          $("#card3img").attr("src", output.recipes[i+2].image_url);
+          $("#card3name").text(output.recipes[i+2].title);
+          $("#card1link").attr("href", output.recipes[i].source_url);
+          $("#card2link").attr("href", output.recipes[i+1].source_url);
+          $("#card3link").attr("href", output.recipes[i+2].source_url);
+        });
         }
       });
     })
@@ -34,7 +44,7 @@ $(window).on('scroll',function() {
     function find(id) { return document.getElementById(id) }
 
     var age = find("age").value
-    var height = find("height").value 
+    var height = find("height").value
     var weight = find("weight").value
     var result = 0
     if (find("male").checked)
