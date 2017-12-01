@@ -37,7 +37,27 @@ $(window).on('scroll',function() {
         }
       });
     })
-  })
+  });
+
+
+  $(function () {
+      $(document).ready(function(){
+      $(document).on('click', '#button', function(e) {
+        e.preventDefault();
+        let rld = Math.floor(Math.random()*89999+10000);
+        $.ajax({
+          url: "https://food2fork.com/api/get?key=e575e3859137c773dbe645d95348cb43&rId=" + rld,
+          context: document.body,
+          method: 'GET',
+        }).done(function(res) {
+          let output = JSON.parse(res);
+          $("#challenge_p").text(output.recipe.ingredients);
+          $("#challenge_img").attr("src", output.recipe.image_url);
+          $("#challenge_title").text(output.recipe.title);
+    });
+  });
+});
+});
 
 
   function calsPerDay() {
