@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bigfoodie</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link href="group.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://freeiconshop.com/wp-content/uploads/edd/food-outline.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Petit Formal Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+    <script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="javascript1.js"></script>
+</head>
+
+<body>
+  <header id="sticky-header">
+    <div class="main-menu-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="logo">
+              <img src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Food-Dome-512.png">
+              <a-href="#">BigFoodie</a>
+            </div>
+          </div>
+        <div class="col-md-9">
+          <div class="main-menu text-right">
+            <nav>
+              <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mix">Find your mix</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="contacts_edit.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+
+ <div class="view intro hm-purple-light" style="height: 600px;"></div>
+
+ <div class="container pb-4" id="mix">
+  <h3 class="display-4 text-center">Search Recipes</h3>
+  <hr class="bg-dark w-25">
+    <p class="lead text-center">
+      <input type="text" id="searchform" name="search" placeholder="Type your ingredients...">
+    </p>
+ </div>
+
+      <!-- Card -->
+      <div class="container container mt-4 mb-5">
+        <h3 class="display-4 text-center"> Latest Recipes </h3>
+        <hr class="bg-dark mb-4 w-25">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://dummyimage.com/350x250/c7c7c7/000.png" alt="Recipe">
+                    <div class="card-block p-3">
+                        <h4 class="card-title">Recipe</h4>
+                        <p class="card-text">Here will be a short description of the recipe</p>
+                        <a href="#" class="btn btn-outline-secondary rounded-0 mb-2">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <img class="card-img-top" src="https://dummyimage.com/350x250/c7c7c7/000.png" alt="Recipe">
+                  <div class="card-block p-3">
+                      <h4 class="card-title">Recipe</h4>
+                      <p class="card-text">Here will be a short description of the recipe</p>
+                      <a href="#" class="btn btn-outline-secondary rounded-0 mb-2">Learn more</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <img class="card-img-top" src="https://dummyimage.com/350x250/c7c7c7/000.png" alt="Recipe">
+                  <div class="card-block p-3">
+                      <h4 class="card-title">Recipe</h4>
+                      <p class="card-text">Here will be a short description of the recipe</p>
+                      <a href="#" class="btn btn-outline-secondary rounded-0 mb-2">Learn more</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Calories counter form -->
+  <div class="counter">
+   <h3 class="display-4 text-center"> Find out how many calories per day you need! </h3>
+   <label>Female:
+     <input id="female" type="radio" name="gender" onchange="calsPerDay()">
+   </label>
+  <label>Male:
+    <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked>
+  </label>
+  <label>Age:
+    <input id="age" type="number" oninput="calsPerDay()" value="20">
+  years
+  </label>
+  <label>Height:
+    <input id="height" type="number" oninput="calsPerDay()" value="170">
+  in cm
+  </label>
+  <label>Weight:
+    <input id="weight" type="number" oninput="calsPerDay()" value="70">
+  in kg
+  </label>
+  <label>
+    Base metabolic rate: <span id="totalCals"></span> kcal per day
+  </label>
+</div>
+
+
+
+      <!-- Footer -->
+      <footer class="footer text-white">
+
+          <!-- Social Icons -->
+          <div id="socialmedia">
+              <div class="container">
+                  <div class="row py-4">
+                      <div class="col-md-6 col-lg-7">
+                          <h4 class="mb-0">Get connected with us on social networks!</h4>
+                      </div>
+                      <!-- These are the logos from Font Awesome, which can be found in the css-file -->
+                      <div class="col-md-6 col-lg-5 text-right">
+                          <a href="https://www.facebook.com"><i class="fa fa-facebook mr-lg-4 fa-2x"></i></a> <!-- mr-lg-4 is for nice looking spacing in a large browser, fa-2x is size of the logo -->
+                          <a href="https://www.twitter.com"><i class="fa fa-twitter mr-lg-4 fa-2x"> </i></a>
+                          <a href="https://www.linkedin.com"><i class="fa fa-linkedin mr-lg-4 fa-2x"> </i></a>
+                          <a href="https://www.instagram.com"><i class="fa fa-instagram mr-lg-4 fa-2x"> </i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Social Icons -->
+
+          <!-- Footer Links -->
+          <div class="container pt-5 pb-2" id="footer">
+              <div class="row">
+
+                  <div class="col-md-3 col-lg-4 col-xl-3">
+                      <h4>Big Foodie</h4>
+                      <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                      <p>
+                          Big Foodie is a recipe company for big people who love food!
+                      </p>
+                  </div>
+
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                      <h4>API</h4>
+                      <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                      <p><a href="https://www.food2fork.com" class="text-white">Our website makes use of the food2fork API to gather information about recipes. Click to visit them!</a></p>
+
+                  </div>
+
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                      <h4>Design</h4>
+                      <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                      <p><a href="https://www.tinyfoodie.com" class="text-white">Our design is inspired by tinyfoodie.com. Click to visit their amazing website!</a></p>
+                  </div>
+
+                  <div class="col-md-4 col-lg-3 col-xl-3">
+                      <h4>Contact</h4>
+                      <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                      <p><i class="fa fa-home mr-3"></i> Erasmus University Rotterdam</p>
+                      <p><i class="fa fa-envelope mr-3"></i> big@foodie.com</p>
+                      <p><i class="fa fa-phone mr-3"></i> + 06 12 34 56 78</p>
+                  </div>
+
+              </div>
+          </div>
+          <!-- Footer Links-->
+
+          <hr class="bg-white mx-4 mt-2 mb-1">
+
+          <!-- Copyright-->
+          <div class="container-fluid">
+              <p class="text-center m-0 py-1">
+                  © 2017 Copyright Big Foodie Designs LLC
+              </p>
+          </div>
+          <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="group.js"></script>
+</body>
+</html>
