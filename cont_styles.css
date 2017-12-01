@@ -1,0 +1,54 @@
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#title {
+  padding-top: 50px;
+  font-family: 'Julius Sans One';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+body, #contact {
+    background-image: url("background.jpg");
+    background-size: 100%;
+}
+
+#text {
+    font: 12px;
+}
+
+#contact{
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact .well{
+    background-color: white;
+    margin-top:30px;
+    border-radius:0;
+    border:1px solid #1e1e1e;
+    font-family:'Times New Roman';
+    line-height: 1.5em;
+
+}
+
+#contact .form-control{
+    border-radius: 0;
+    border:1px solid #1e1e1e;
+
+}
+}
+
+#contact button{
+    border-radius:0;
+    border:1px solid #1e1e1e;
+}
+
+#contact .row{
+    margin-bottom:30px;
+}
+
+@media (max-width: 768px) {
+    #contact iframe {
+        margin-bottom: 15px;
+    }
